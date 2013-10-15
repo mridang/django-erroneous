@@ -15,7 +15,7 @@ class Error(models.Model):
         blank=True, null=True
     )
     path = models.URLField(
-        null=True, blank=True, verify_exists=False,
+        null=True, blank=True,
     )
     when = models.DateTimeField(
         null=False, auto_now_add=True, db_index=True,
